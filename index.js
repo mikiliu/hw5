@@ -59,8 +59,8 @@ window.onload = function() {
                         .attr("opacity",1)
                         .transition()
                         .duration( 700 )
-                        .attr( "x", m.width * Math.round( Math.random()))
-                        .attr( "y", m.height * Math.round( Math.random()))
+                        .attr( "cx", m.width * Math.round( Math.random()))
+                        .attr( "cy", m.height * Math.round( Math.random()))
                         .attr( "opacity", 0 )
                         .on("end",function(){
                             d3.select(this).remove();
